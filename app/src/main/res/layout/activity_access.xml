@@ -71,6 +71,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounder_borders"
                 android:textColor="#fff"
+                android:onClick="onClick"
                 android:text="Login" />
 
             <TextView
@@ -79,8 +80,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 android:text="Create an account"
-                android:onClick="goRegister"
+                android:onClick="onClick"
                 android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/btnCloseAll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                app:srcCompat="@android:drawable/ic_notification_clear_all" />
+
         </LinearLayout>
 
     </LinearLayout>

@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         image = (ImageView) findViewById(R.id.senati_white);
-        timer.schedule(timerTask,1,10);
+        timer.schedule(timerTask,1,1);
     }
 
     int seconds = 0;
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         public void run() {
             seconds++;
             image.setRotation(seconds);
-            if(seconds == 1000){
+            if(seconds == 1080){
                 timerTask.cancel();
                 Intent intent = new Intent(MainActivity.this,Access.class);
                 startActivity(intent);
