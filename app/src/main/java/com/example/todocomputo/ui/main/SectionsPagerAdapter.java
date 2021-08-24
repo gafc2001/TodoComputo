@@ -8,8 +8,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import com.example.todocomputo.ComputerMenuItem;
+import com.example.todocomputo.KeyboardMenuItem;
+import com.example.todocomputo.PrinterMenuItem;
 import com.example.todocomputo.R;
-
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
  * one of the sections/tabs/pages.
@@ -29,7 +31,16 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         // getItem is called to instantiate the fragment for the given page.
         // Return a PlaceholderFragment (defined as a static inner class below).
-        return PlaceholderFragment.newInstance(position + 1);
+        switch (position){
+            case 0:
+                return new ComputerMenuItem();
+            case 1:
+                return new PrinterMenuItem();
+            case 2:
+                return new KeyboardMenuItem();
+            default:
+                return null;
+        }
     }
 
     @Nullable

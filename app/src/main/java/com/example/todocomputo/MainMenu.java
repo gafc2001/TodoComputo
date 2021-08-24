@@ -38,7 +38,8 @@ public class MainMenu extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                String msg = "Haga click en la imagen para mas inforamcion";
+                Snackbar.make(view, msg, Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });

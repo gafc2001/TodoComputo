@@ -11,6 +11,7 @@ public class MainPanel extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_panel);
+        //Opening MainMenu
         Intent intent = new Intent(MainPanel.this, MainMenu.class);
         startActivity(intent);
     }
