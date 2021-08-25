@@ -22,14 +22,16 @@ public class ComputerMenuItem extends Fragment {
         View root = inflater.inflate(R.layout.fragment_computer,container,false);
 
         image=(ImageView) root.findViewById(R.id.imageComputer);
-        image.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        image.setOnClickListener(this::onClickKeyboard);
+        return  root;
+    }
+    public void onClickKeyboard(View view){
+        switch (view.getId()){
+            case R.id.imageComputer:
                 Intent intent = new Intent(getActivity().getApplication(),ComputerList.class);
                 startActivity(intent);
-            }
-        });
-        return  root;
+                break;
+        }
     }
 
 }

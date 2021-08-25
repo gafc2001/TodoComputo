@@ -15,7 +15,7 @@ public class Access extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_access);
     }
-    public void onClick(View view){
+    public void onClickLogin(View view){
         switch (view.getId()){
             case R.id.lblCreateAccount:
                 Intent intent = new Intent(this,Register.class);

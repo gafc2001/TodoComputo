@@ -5,16 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class Register extends AppCompatActivity {
+public class PrinterList extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_printer_list);
     }
-    public  void onClickRegister(View view){
-        switch (view.getId()){
-            case R.id.btnReturn:
+    public void onClickPrinter(View view){
+        switch (view.getId()) {
+            case R.id.returnMenuPrinter:
                 finish();
                 break;
         }

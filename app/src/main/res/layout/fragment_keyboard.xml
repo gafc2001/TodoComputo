@@ -25,11 +25,11 @@
             tools:layout_constraintTop_creator="1"
             android:text="Teclados" />
 
-        <ImageView
-            android:id="@+id/imageView4"
+        <ImageButton
+            android:id="@+id/imageKeyboard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@mipmap/keyboard" />
+            android:src="@mipmap/keyboard"/>
 
     </LinearLayout>
 

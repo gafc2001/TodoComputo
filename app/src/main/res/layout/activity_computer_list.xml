@@ -10,7 +10,26 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:translationZ="5dp"
+            android:background="#1765BE"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp">
 
+            <TextView
+                android:id="@+id/returnMenuComputer"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Regresar"
+                android:textColor="#fff"
+                android:drawableLeft="@drawable/abc_vector_test"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:onClick="onClickComputer"
+                />
+        </com.google.android.material.navigation.NavigationView>
         <ScrollView
             android:layout_width="409dp"
             android:layout_height="729dp">
