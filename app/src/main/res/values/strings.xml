@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">TodoComputo</string>
     <string name="title_activity_menu">Menu</string>
-    <string name="tab_text_1">Computadoras</string>
-    <string name="tab_text_2">Impresoras</string>
-    <string name="tab_text_3">Teclados</string>
+    <string name="tab_text_1">Computers</string>
+    <string name="tab_text_2">Printers</string>
+    <string name="tab_text_3">Keyboard</string>
 
 </resources>

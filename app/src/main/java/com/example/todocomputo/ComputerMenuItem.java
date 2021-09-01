@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,20 +14,20 @@ import com.example.todocomputo.ComputerList;
 
 public class ComputerMenuItem extends Fragment {
 
-    ImageView  image;
+    Button btn;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_computer,container,false);
 
-        image=(ImageView) root.findViewById(R.id.imageComputer);
-        image.setOnClickListener(this::onClickKeyboard);
+        btn=(Button) root.findViewById(R.id.btnMoreComputer);
+        btn.setOnClickListener(this::onClickKeyboard);
         return  root;
     }
     public void onClickKeyboard(View view){
         switch (view.getId()){
-            case R.id.imageComputer:
+            case R.id.btnMoreComputer:
                 Intent intent = new Intent(getActivity().getApplication(),ComputerList.class);
                 startActivity(intent);
                 break;

@@ -11,25 +11,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-    <TextView
-        android:id="@+id/section_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1"
-        android:text="Computadoras"/>
-    </LinearLayout>
+        <TextView
+            android:id="@+id/section_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1"
+            android:text="Computadoras"/>
 
-    <ImageView
-        android:id="@+id/imageComputer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/computer"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="51dp" />
+
+        <ImageView
+            android:id="@+id/imageComputer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/computer"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="51dp" />
+
+        <Button
+            android:id="@+id/btnMoreComputer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="See more"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#FF6E09"/>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

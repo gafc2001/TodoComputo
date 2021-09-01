@@ -14,7 +14,7 @@
 
         <TextView
             android:id="@+id/section_label2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
@@ -23,14 +23,25 @@
             app:layout_constraintLeft_toLeftOf="parent"
             tools:layout_constraintLeft_creator="1"
             tools:layout_constraintTop_creator="1"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="30dp"
             android:text="Teclados" />
 
         <ImageButton
             android:id="@+id/imageKeyboard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:src="@mipmap/keyboard"/>
-
+        <Button
+            android:id="@+id/btnMoreKeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="See more"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#FF6E09"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

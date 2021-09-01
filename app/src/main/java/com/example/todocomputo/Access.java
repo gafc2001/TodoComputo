@@ -38,7 +38,7 @@ public class Access extends AppCompatActivity {
                 });
                 dialog.show();
                 break;
-            case R.id.btnLogin:
+            case R.id.btnRegister:
                 Intent intent2 = new Intent(Access.this,MainPanel.class);
                 startActivity(intent2);
                 break;
