@@ -26,7 +26,8 @@ public class PrinterMenuItem extends Fragment {
     public void onClickPrinter(View view){
         switch (view.getId()){
             case R.id.btnMorePrinter:
-                Intent intent = new Intent(getActivity().getApplication(),PrinterList.class);
+                Intent intent = new Intent(getActivity().getApplication(),ProductList.class);
+                intent.putExtra("category","Printer");
                 startActivity(intent);
                 break;
         }

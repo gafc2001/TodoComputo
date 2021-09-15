@@ -10,13 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".PrinterList"
-            android:exported="true"/>
-        <activity
-            android:name=".KeyboardList"
+            android:name=".ProductList"
             android:exported="true" />
         <activity
-            android:name=".ComputerList"
+            android:name=".InsertProduct"
             android:exported="true" />
         <activity
             android:name=".MainPanel"

@@ -27,7 +27,8 @@ public class KeyboardMenuItem extends Fragment {
     public void onclickKeyboard(View view){
         switch (view.getId()){
             case R.id.btnMoreKeyboard:
-                Intent intent = new Intent(getActivity().getApplication(),KeyboardList.class);
+                Intent intent = new Intent(getActivity().getApplication(),ProductList.class);
+                intent.putExtra("category","Keyboard");
                 startActivity(intent);
                 break;
         }

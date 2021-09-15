@@ -35,7 +35,7 @@ public class Register extends AppCompatActivity {
                 finish();
                 break;
             case R.id.btnRegister:
-                cn = new Connection(this,"bdsales",null,1);
+                cn = new Connection(this,"todocomputodb",null,1);
                 user = new User();
                 SQLiteDatabase bd = cn.getWritableDatabase();
                 if(bd != null){

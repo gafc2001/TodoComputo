@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ComputerList">
+    tools:context=".ProductList">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,7 +19,7 @@
             android:paddingLeft="5dp">
 
             <TextView
-                android:id="@+id/returnMenuComputer"
+                android:id="@+id/returnMenu"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:text="Regresar"
@@ -29,7 +29,19 @@
                 android:textAlignment="center"
                 android:onClick="onClickComputer"
                 />
+
         </com.google.android.material.navigation.NavigationView>
+        <TextView
+            android:id="@+id/titleListProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Computers"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:background="#3098BE"
+            android:height="50dp"
+            android:paddingTop="10dp"
+            android:textSize="20dp"/>
         <ScrollView
             android:layout_width="409dp"
             android:layout_height="729dp">
@@ -40,25 +52,16 @@
                 android:orientation="vertical" >
 
                 <ImageView
-                    android:id="@+id/imageView5"
+                    android:id="@+id/productImage"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/computer_1" />
-                <ImageView
-                    android:id="@+id/imageView6"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <ListView
+                    android:id="@+id/ListItemProducts"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/computer_2" />
-                <ImageView
-                    android:id="@+id/imageView7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/computer_3" />
-                <ImageView
-                    android:id="@+id/imageView8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/computer_4" />
+                    android:layout_height="508dp">
+                </ListView>
 
             </LinearLayout>
         </ScrollView>

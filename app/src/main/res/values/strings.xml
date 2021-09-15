@@ -5,4 +5,10 @@
     <string name="tab_text_2">Printers</string>
     <string name="tab_text_3">Keyboard</string>
 
+    <string-array name="categories">
+        <item> Computer</item>
+        <item> Keyboard </item>
+        <item> Printer </item>
+    </string-array>
 </resources>
+
